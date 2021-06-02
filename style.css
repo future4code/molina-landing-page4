@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------HEADER------------ */
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: peachpuff;
+    color: rgb(97, 56, 56);
+    height: 300px;
+}
+
+.cabecalho img{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.cabecalho h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.opcoes {
+    background-color:salmon;
+    color: white;
+    padding: 5px;
+}
+
+.menu {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*---------MAIN------------ */
+.secao1{
+    display:flex;
+    flex-wrap: wrap; 
+    padding: 20px;
+    background-color: white;
+}
+
+.imagem-secao1{
+    margin-left: 30px;
+}
+
+.imagem-secao1 img{
+    width: 650px;
+    box-shadow: 2px 2px 5px peachpuff;
+}
+
+.imagem-secao1 h2{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.japones {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.secao2{
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: white;
+    height: 250px;
+    margin-bottom: 150px;
+}
+
+.imagem-secao2 {
+    display:flex;
+    background-color: #AFD6EE;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.frase-secao2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.frase1, .frase2, .frase3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.count {
+    color: white;
+    font-size: 80px;
+}
+
+/*---------FOOTER------------ */
+
+.rodape-final {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    background-color: peachpuff;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 400px;
+}
+.rodape-rede-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-rede-social {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: stretch;
+    margin: 20px;
+}
+.logo-rodape {
+    width: 300px;
+    height: 300px;
+    margin: 30px;  
+}
+#rede-social {
+    margin: 10px;
+}
+
+/*---------MEDIA QUERY------------ */
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+    .cabecalho {
+        grid-template-columns: 1fr;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 200px;
+    }
+
+    .cabecalho img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .cabecalho h1{
+        font-size: 25px;
+    }
+
+    .imagem-secao2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
